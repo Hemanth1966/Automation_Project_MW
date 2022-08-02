@@ -50,8 +50,11 @@ public class Mobileworld_orders {
 		S.selectByIndex(2);
 		driver.findElement(By.id("inputZip")).sendKeys("560045");
 		driver.findElement(By.xpath("//input[@rel='apple']")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@rel='samsung']")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[@class='apple']//option[2]")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@placeholder='no of mobiles']")).sendKeys("1");
 		WebElement Count = driver.findElement(By.id("bought"));
 		Select s3 = new Select(Count);
