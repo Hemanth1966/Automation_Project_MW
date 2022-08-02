@@ -24,6 +24,6 @@ public class Mobileworld_Contactus {
 		driver.findElement(By.xpath("//input[@placeholder='Phone']")).sendKeys("6362245981");
 		driver.findElement(By.name("message")).sendKeys("hello world");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
-		driver.quit();
+		driver.quit()
 	}
 }
